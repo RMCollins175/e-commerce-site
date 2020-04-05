@@ -3,17 +3,12 @@ import "./App.css";
 import { Switch, Route } from "react-router-dom";
 import Homepage from "./pages/homepage/homepage.component";
 import Shopage from "./pages/shop/shop.component";
-
-
-const HATS = () => (
-  <div>
-    <h1>HELLO HATS</h1>
-  </div>
-);
+import Header from "./components/header/header.component";
 
 function App() {
   return (
     <div>
+      <Header/>
       <Switch>
         <Route
           exact={true}
